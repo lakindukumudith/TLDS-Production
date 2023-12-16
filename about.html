@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About This Page</title>
+    <link rel="shortcut icon" href="My Brother And Self Photo And Tharusha Photo.png" type="image/x-icon">
+</head>
+<body >
+   <style>
+    body {
+       background-color: #010126; 
+    }
+    * {
+        color: white;
+    }
+    #time {
+        color: black;
+    }
+    #ok {
+        color: black;
+    }
+    #time {
+        background-color: greenyellow;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        color: green;
+    }
+    #time:hover {
+        background-color: aquamarine;
+    }
+    #ok {
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    #no {
+        background-color: red;
+        text-align: center;
+       font-size: 50px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    #date {
+        background-color: green;
+        text-align: center;
+        font-size: 50px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        border-radius: 50%;
+    }
+
+   </style> 
+   <h1>You Can Send a Massage on This Time. (Whatsapp,Facebook)</h1>
+
+   <p>Type The Day of A Week.</p>
+   
+   <input type="text" id="time" list="dayoftheweek"> <input type="button" value="OK" id="ok" onclick="return day()">
+   
+   <datalist id="dayoftheweek">
+    <option value="monday">
+    <option value="tuesday">
+    <option value="wednesday">
+    <option value="thursday">
+    <option value="friday">
+    <option value="saturday">
+    <option value="sunday">
+</datalist>
+
+<script>
+    var input = document.getElementById("time");
+    input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("ok").click();
+  }
+});
+</script>
+
+   
+
+    <div id="no"  style="display: none;">
+        <p>it is Not a Day</p>
+    </div>
+
+    <div id="date">
+
+    <div id="m" style="display: none;">
+    <h4>Start - 1.30 PM</h4>
+    <h4>End - 8.00 PM</h4></div>
+
+    <div id="t" style="display: none;">
+        <h4>Start - 1.30 PM</h4>
+        <h4>End - 8.00 PM</h4></div>
+
+        <div id="w" style="display: none;">
+            <h4>Start - 1.30 PM</h4>
+            <h4>End - 8.00 PM</h4></div>
+
+            <div id="th" style="display: none;">
+                <h4>Start - 1.30 PM</h4>
+                <h4>End - 8.00 PM</h4></div>
+
+                <div id="f" style="display: none;">
+                    <h4>Start - 1.30 PM</h4>
+                    <h4>End - 8.00 PM</h4></div>
+
+                    <div id="s" style="display: none;">
+                        <h4>Start - 8.00 AM</h4>
+                        <h4>End - 8.00 PM</h4></div>
+
+                        <div id="sun" style="display: none;">
+                            <h4>Sunday is HollyDay To me..</h4></div>
+                        </div>
+                        
+    <script>
+        let m = "monday"
+        let t = "tuesday"
+        let w = "wednesday"
+        let th = "thursday"
+        let f = "friday"
+        let s = "saturday"
+        let sun = "sunday"
+
+ 
+
+
+        function day() {
+            if (document.getElementById('time').value == m) {
+                document.getElementById('m').style.display ="block";
+                document.getElementById('no').style.display = "none";
+                document.getElementById('t').style.display = "none";
+                document.getElementById('w').style.display = "none";
+                document.getElementById('th').style.display = "none";
+                document.getElementById('f').style.display = "none";
+                document.getElementById('s').style.display = "none";
+                document.getElementById('sun').style.display = "none";
+                return false;
+            }
+           
+        
+
+
+        
+            if (document.getElementById('time').value == t) {
+                document.getElementById('t').style.display ="block";
+                document.getElementById('no').style.display = "none";
+                document.getElementById('m').style.display = "none";
+                document.getElementById('w').style.display = "none";
+                document.getElementById('th').style.display = "none";
+                document.getElementById('f').style.display = "none";
+                document.getElementById('s').style.display = "none";
+                document.getElementById('sun').style.display = "none";
+                return false;
+            }
+        
+
+        
+            if (document.getElementById('time').value == w) {
+                document.getElementById('w').style.display ="block";
+                document.getElementById('no').style.display = "none";
+                document.getElementById('m').style.display = "none";
+                document.getElementById('t').style.display = "none";
+                document.getElementById('th').style.display = "none";
+                document.getElementById('f').style.display = "none";
+                document.getElementById('s').style.display = "none";
+                document.getElementById('sun').style.display = "none";
+                return false;
+            }
+        
+
+       
+            if (document.getElementById('time').value == th) {
+                document.getElementById('th').style.display ="block";
+                document.getElementById('no').style.display = "none";
+                document.getElementById('m').style.display = "none";
+                document.getElementById('t').style.display = "none";
+                document.getElementById('w').style.display = "none";
+                document.getElementById('f').style.display = "none";
+                document.getElementById('s').style.display = "none";
+                document.getElementById('sun').style.display = "none";
+                return false;
+            }
+        
+
+            if (document.getElementById('time').value == f) {
+                document.getElementById('f').style.display ="block";
+                document.getElementById('no').style.display = "none";
+                document.getElementById('m').style.display = "none";
+                document.getElementById('t').style.display = "none";
+                document.getElementById('w').style.display = "none";
+                document.getElementById('th').style.display = "none";
+                document.getElementById('f').style.display = "none";
+                document.getElementById('s').style.display = "none";
+                document.getElementById('sun').style.display = "none";
+                return false;
+            }
+        
+
+      
+            if (document.getElementById('time').value == s) {
+                document.getElementById('s').style.display ="block";
+                document.getElementById('no').style.display = "none";
+                document.getElementById('m').style.display = "none";
+                document.getElementById('t').style.display = "none";
+                document.getElementById('w').style.display = "none";
+                document.getElementById('th').style.display = "none";
+                document.getElementById('f').style.display = "none";
+                document.getElementById('sun').style.display = "none";
+                return false;
+            }
+        
+
+       
+            if (document.getElementById('time').value == sun) {
+                document.getElementById('sun').style.display ="block";
+                document.getElementById('no').style.display = "none";
+                document.getElementById('m').style.display = "none";
+                document.getElementById('t').style.display = "none";
+                document.getElementById('w').style.display = "none";
+                document.getElementById('th').style.display = "none";
+                document.getElementById('f').style.display = "none";
+                document.getElementById('s').style.display = "none";
+                return false;
+            }
+
+            if (document.getElementById('time').vlaue != t) {
+                document.getElementById('no').style.display="block";
+                document.getElementById('mon').style.display = "none";
+                document.getElementById('m').style.display = "none";
+                document.getElementById('t').style.display = "none";
+                document.getElementById('w').style.display = "none";
+                document.getElementById('th').style.display = "none";
+                document.getElementById('f').style.display = "none";
+                document.getElementById('s').style.display = "none";
+                document.getElementById('sun').style.display = "none";
+                
+            }
+
+            if (document.getElementById('time').vlaue != w) {
+                document.getElementById('no').style.display="block";
+                document.getElementById('tuesday').style.display = "none";
+                document.getElementById('mon').style.display = "none";
+                document.getElementById('m').style.display = "none";
+                document.getElementById('t').style.display = "none";
+                document.getElementById('w').style.display = "none";
+                document.getElementById('th').style.display = "none";
+                document.getElementById('f').style.display = "none";
+                document.getElementById('s').style.display = "none";
+                document.getElementById('sun').style.display = "none";
+                
+            }
+
+            if (document.getElementById('time').vlaue != th) {
+                document.getElementById('no').style.display="block";
+                document.getElementById('wednsday').style.display = "none";
+                document.getElementById('mon').style.display = "none";
+                document.getElementById('m').style.display = "none";
+                document.getElementById('t').style.display = "none";
+                document.getElementById('w').style.display = "none";
+                document.getElementById('th').style.display = "none";
+                document.getElementById('f').style.display = "none";
+                document.getElementById('s').style.display = "none";
+                document.getElementById('sun').style.display = "none";
+                
+            }
+
+            if (document.getElementById('time').vlaue != f) {
+                document.getElementById('no').style.display="block";
+                document.getElementById('thursday').style.display = "none";
+                document.getElementById('mon').style.display = "none";
+                document.getElementById('m').style.display = "none";
+                document.getElementById('t').style.display = "none";
+                document.getElementById('w').style.display = "none";
+                document.getElementById('th').style.display = "none";
+                document.getElementById('f').style.display = "none";
+                document.getElementById('s').style.display = "none";
+                document.getElementById('sun').style.display = "none";
+                
+            }
+
+            if (document.getElementById('time').vlaue != s) {
+                document.getElementById('no').style.display="block";
+                document.getElementById('friday').style.display = "none";
+                document.getElementById('mon').style.display = "none";
+                document.getElementById('m').style.display = "none";
+                document.getElementById('t').style.display = "none";
+                document.getElementById('w').style.display = "none";
+                document.getElementById('th').style.display = "none";
+                document.getElementById('f').style.display = "none";
+                document.getElementById('s').style.display = "none";
+                document.getElementById('sun').style.display = "none";
+                
+            }
+
+            if (document.getElementById('time').vlaue != sun) {
+                document.getElementById('no').style.display="block";
+                document.getElementById('saturday').style.display = "none";
+                document.getElementById('mon').style.display = "none";
+                document.getElementById('m').style.display = "none";
+                document.getElementById('t').style.display = "none";
+                document.getElementById('w').style.display = "none";
+                document.getElementById('th').style.display = "none";
+                document.getElementById('f').style.display = "none";
+                document.getElementById('s').style.display = "none";
+                document.getElementById('sun').style.display = "none";
+                
+            }
+
+            if (document.getElementById('time').vlaue != sun) {
+                document.getElementById('no').style.display="block";
+                document.getElementById('sun').style.display = "none";
+                document.getElementById('mon').style.display = "none";
+                document.getElementById('m').style.display = "none";
+                document.getElementById('t').style.display = "none";
+                document.getElementById('w').style.display = "none";
+                document.getElementById('th').style.display = "none";
+                document.getElementById('f').style.display = "none";
+                document.getElementById('s').style.display = "none";
+                document.getElementById('sun').style.display = "none";
+                
+            }
+                
+    
+           
+        }
+    
+
+        
+
+    
+    </script>
+</body>
+</html>

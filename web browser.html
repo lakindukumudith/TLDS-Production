@@ -1,0 +1,83 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TLDS WebBrowser</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="My Brother And Self Photo And Tharusha Photo.png" type="image/x-icon">
+    </head>
+    <body>
+        <script>
+            var ldm = 0
+             function bc () {
+            switch (ldm) {
+                case 0:
+                    ldm = 1;
+                        document.body.style.backgroundColor = "#F3E7E7"  //background is white
+                        document.getElementById('lb').style.background = "black"
+                        document.getElementById('lb').style.color = "white"
+                        document.getElementById('lb').innerHTML = "Dark Mode"
+          
+  
+                        break;
+
+
+                case 1:
+                    ldm = 0;
+                        document.body.style.backgroundColor = "#010126"         //background is black
+                        document.getElementById('lb').style.background = "white"
+                        document.getElementById('lb').style.color = "black"
+                        document.getElementById('lb').innerHTML = "Light Mode"
+                   
+
+                        break;
+
+                
+            }
+        }
+        </script>
+        <style>
+.web {
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: #010126;
+}
+.gcse-search {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: #010126;
+}
+#lb {
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+        border: none;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+       }
+body {
+   background-color: #010126; 
+}
+        </style>
+
+<br>
+<button onclick="bc()" id="lb">Light Mode</button>
+<br>
+<br>
+
+        <div class="web">
+
+            <script src="https://cse.google.com/cse.js?cx=22fd7750054f94533">
+            </script>
+            <div class="gcse-search"></div>
+        </div>
+       
+    </body>
+    </html>
+  

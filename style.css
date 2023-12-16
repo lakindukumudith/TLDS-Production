@@ -1,0 +1,19 @@
+#rv {
+    color: white; 
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+.cp {
+    color: rgb(145, 58, 145);
+}
+.cs {
+    color: rgb(145, 58, 145);
+}
+.TLD {                                  /*TLD production Apps Store Batton */
+    border: none;
+    border-radius: 7px;
+    font-size: 20px;
+}
+.gcse-search {
+    background-color: transparent;
+}

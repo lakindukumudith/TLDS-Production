@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's See The Brain Free installer</title>
+    
+    <style>
+        * {
+            color: white;
+        }
+        .LSBF {
+            text-align: center;
+            color: darkorange;
+            font-size: 80px;
+            border: 2px darkcyan;
+            border-style: dashed;
+            border-radius: 10px;
+            width: 50%;
+            padding: 5px;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        .LSBF::selection {
+            color: greenyellow;
+        } 
+        .LSBF::first-letter {
+            color: red;
+        }
+        button {
+            border-radius: 5px;
+            border: 1px solid greenyellow;
+            color: #010126;
+            font-size: 20px;
+            padding: 5px;
+            margin-left: 42%;
+            margin-right: auto;
+            cursor: pointer;
+            
+            
+        }
+        input {
+            border-radius: 5px;
+            border: 1px solid greenyellow;
+            color: #010126;
+            font-size: 20px;
+            padding: 5px;
+            margin-left: 42%;
+            margin-right: auto;
+            cursor: pointer;
+            
+            
+        }
+        
+    </style>
+    <script>
+        
+        function sub()  {
+           document.getElementById('welcome').style.display = "block";
+        }
+        function nextw () {
+            document.getElementById('main-cont').style.display = "none";
+            document.getElementById('sec-cont').style.display = "block";
+        }
+        function nextc () {
+            document.getElementById('sec-cont').style.display = "none";
+            document.getElementById('third-cont').style.display = "block";
+        }
+        function nextl () {
+            document.getElementById('third-cont').style.display = "none";
+            document.getElementById('forth-cont').style.display = "block";
+        }
+    </script>
+</head>
+<body style="background-color: #010126;">
+
+    <h1 class="LSBF">LSBF installer</h1>
+    
+    <div id="main-cont">
+    <a href="https://www.youtube.com/channel/UCvjYs1Y1Bn0HBeUemCfHu2w/view_as=subscriber?sub_confirmation=1" target="_blank">
+        <button type="button" onclick="sub()" id="sub">Subscribe My Chanell</button>
+    </a>
+
+    <style>
+        .welcom {
+            font-size: 20px;
+            width: 30%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto
+
+            
+        }
+        .welcom::selection {
+            display: unset;
+            
+            
+        }
+        #next {
+            border-radius: 5px;
+            border: 1px solid greenyellow;
+            color: #010126;
+            font-size: 20px;
+            padding: 5px;
+            margin-left: 48%;
+            margin-right: auto;
+            cursor: pointer;
+        }
+    </style>
+
+    <div id="welcome" style="display: none;">
+        <p class="welcom" draggable="false">Welcome to TLDS Production installer place. Click next to go the installetion.</p>
+        <button draggable="false" id="next" onclick="nextw()">Next</button>
+
+    </div>
+</div>
+
+<div id="sec-cont" style="display: none;">
+    <u><h2>Credits</h2></u>
+    <h3>Director - Lakindu Kumuditha</h3>
+    <h3>Creator - Lakindu Kumuditha</h3>
+    <h3>Helpus <ul>+ Sarath Munasinghe
+              <br>+ Aindika Kathriarachchi
+              <br>+ Deliya Suganjith     
+    </ul></h3>
+    <button type="button" onclick="nextc()">next</button>
+</div>
+<div id="third-cont" style="display: none;">
+    <u><h2>Licence Agreement</h2></u>
+    <p>Let's See The Brain (LSB) installer setup is crated by Lakindu Kumuditha.<br> 
+    This is free version of the game. Converted by Lakindu Kumuditha. I Try <br>
+    5 Years to made this game. But I can't understand english. Now I can English.<br>
+    Watch The My Tutorials on youtube. <i>Cophyrighted by TLDS Production 2020</i></p>
+    
+    <button type="button" onclick="nextl()">next</button>
+    
+</div>
+<div id="forth-cont" style="display: none;">
+    <br>
+    <a href="index 2.html">
+    <button type="button">Download</button>
+    </a>
+</div>
+</body>
+</html>

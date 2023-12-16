@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TLDS Production</title>
+    <link rel="shortcut icon" href="My Brother And Self Photo And Tharusha Photo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+    <style>
+        th {
+            background-color:green;
+        }
+        tr {
+            background-color: chocolate;
+        }
+        table {
+            border: 1px;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        tr {
+            border: 1px;
+        }
+        th,td {
+            border: none;
+            text-align: center;
+            padding: 2px;
+            font-size: 20px;
+        }
+        tr:nth-child(even) {
+          background-color: coral;  
+        }
+       
+       button {
+        
+        border-radius: 5px;
+        border: none;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+       }
+       #lb {
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+        border: none;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+       }
+       .bloglogo {
+        width: 50px;
+       }
+       .blog-main {
+        justify-content: center;
+        text-align: center;
+        box-sizing: border-box;
+        align-items: center;
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        background-color: rgb(0, 183, 255);
+        border-radius: 5px;
+        border: none;
+        padding: 10px;
+       }
+       .blog-main:hover {
+        background-color: rgb(24, 169, 226);
+       }
+       body {
+        background-color: #010126;
+       }
+       button:hover {
+        opacity: 50%;
+       }
+       .main-img {
+            background-image: url(https://th.bing.com/th/id/OIP.Qre2m5rlYXCci5ee6iRVhAHaEo?pid=ImgDet&rs=1);
+            background-size: cover;
+            text-align: center;
+       }
+       .mypic {
+        background-image: url(Lakindu.jpg);
+        background-size: cover;
+        height: 500px;
+        width: 1386px;
+        margin-left: auto;
+        margin-right: auto;
+       
+        
+       }
+       .lv {
+        background-color: rgb(7, 247, 255);
+       }
+
+    .all {
+    display: flex;
+    padding: 5px; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    }
+       *,
+*::before,
+*::after {
+
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #0676ed;
+  --background: #222b45;
+  --warning: #f2a600;
+  --success: #12c99b;
+  --error: #e41749;
+  --dark: #151a30;
+}
+
+
+
+.alert {
+  min-height: 67px;
+  width: 560px;
+  max-width: 90%;
+  border-radius: 12px;
+  padding: 16px 22px 17px 20px;
+  display: flex;
+  align-items: center;
+}
+.alert-warning {
+  background: var(--warning);
+}
+.alert-success {
+  background: var(--success);
+}
+.alert-primary {
+  background: var(--primary);
+}
+.alert-dark {
+  background: var(--dark);
+}
+.alert-error {
+  background: var(--error);
+}
+.alert .icon__wrapper {
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.253);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.alert .icon__wrapper span {
+  font-size: 21px;
+  color: #fff;
+}
+.alert p {
+  color: #fff;
+  font-family: Verdana;
+  margin-left: 10px;
+}
+.alert p a,
+.alert p a:visited,
+.alert p a:active {
+  color: #fff;
+}
+.alert .open {
+  margin-left: auto;
+  margin-right: 5px;
+  color: black;
+}
+.alert .close, .alert .open {
+  color: #fff;
+  transition: transform 0.5s;
+  font-size: 18px;
+  cursor: pointer;
+}
+.alert .close:hover, .alert .open:hover {
+  transform: scale(1.3);
+  color: black;
+}
+    </style>
+    <script>
+
+        let ldm = 0
+
+        function bc () {
+            switch (ldm) {
+                case 0:
+                    ldm = 1;
+                        document.body.style.backgroundColor = "#F3E7E7"  //background is white
+                        document.getElementById('lb').style.background = "black"
+                        document.getElementById('lb').style.color = "white"
+                        document.getElementById('lb').innerHTML = "Dark Mode"
+                        document.getElementById('pas').style.color = "black"
+                        document.getElementById('per').style.color = "black"
+                        document.getElementById('fmi').style.color = "black"
+                        document.getElementById('rv').style.color = "black"
+                        document.getElementById('per').style.color = "black"
+                        document.getElementById('pern').style.color = "black"
+  
+                        break;
+
+
+                case 1:
+                    ldm = 0;
+                        document.body.style.backgroundColor = "#010126"         //background is black
+                        document.getElementById('lb').style.background = "white"
+                        document.getElementById('lb').style.color = "black"
+                        document.getElementById('lb').innerHTML = "Light Mode"
+                        document.getElementById('pas').style.color = "white"
+                        document.getElementById('per').style.color = "white"
+                        document.getElementById('fmi').style.color = "white"
+                        document.getElementById('rv').style.color = "white"
+                        document.getElementById('per').style.color = "white"
+                        document.getElementById('pern').style.color = "white"
+
+                        break;
+
+                
+            }
+        }
+       function closea() {
+        document.getElementById('aid').style.display = "none"
+       }
+    </script>
+    <style>
+        .tldsa {
+            width: 45px;
+        }
+    </style>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mypic">
+      
+      
+
+    </div>
+    <div class="main-name">
+   <p style="color: red;font-size: 200%;font-family: Arial, Helvetica, sans-serif;font-family: fmabaya;text-align: center;">මගේ අලුත්ම Chanell එක වන TLDS Production Chanell එකේ වෙබ් පිටුවට  <br>
+    සාදරයෙන් පිලිගනිමි.</p>
+
+</div>
+
+
+   <br>
+   <button onclick= bc() id="lb">Light Mode</button>
+   <a href="share.html">
+   <button type="button" >Share</button>
+    </a>
+    <a href="about.html">
+    <button type="button">About This Page</button>
+    </a>
+    <a href="web browser.html">
+      <button type="button">TLDS WebBrowser</button>
+      </a>
+    <br>
+    <br>
+
+   
+
+   <div class="all" id="aid">
+
+    <div class="alert alert-error">
+      <div class="icon__wrapper">
+        <span class="mdi mdi-alert-outline"><img src="My Brother And Self Photo And Tharusha Photo.png" alt="tlds" class="tldsa"></span>
+      </div>
+      <p>Subscribe My Chanell. <a href="https://www.youtube.com/channel/UCvjYs1Y1Bn0HBeUemCfHu2w/view_as=subscriber?sub_confirmation=1" target="_blank">Joing For Free</a></p>
+  
+      <span class="mdi mdi-close close"><i class="bi bi-x-square" onclick="closea()"></i></span>
+    </div>
+  </div>
+  <br>
+   <div class="blog-main">
+    <div class="main-logo">
+        <img src="My Brother And Self Photo And Tharusha Photo.png" alt="tlds logo" class="bloglogo">
+    </div>
+    <div class="main-name">
+   <h2>HTML Tutorial 02 | TLDS Production</h2>
+    </div>
+    <div class="second">
+        <p>Latest Video ..</p>
+    </div>
+    <div class="link">
+        <a href="https://youtu.be/3fD-zI6AQ_I?list=PLhYzpSRl_D95VZZ49jHn9jhSE3fISAFke" target="_blank"><button class="lv">The HTML Tutorial 02 is Relesed</button></a><div class="discription">
+            <p>You Can Click The Link And You Go To Youtube. After You See The Video. SubScribe , Comment , Like And Share.</p>
+        </div>
+    </div>
+    </div>
+
+
+   <br>
+   <br>
+   <div class="main-img">
+   <img src="My Brother And Self Photo And Tharusha Photo.png" width="200" hight="200">
+    </div>
+   <br>
+   <br>
+   <a href="https://www.youtube.com/channel/UCvjYs1Y1Bn0HBeUemCfHu2w"><button class="TLD">My Chanell Link</button> </a>     
+  <br>
+  <br>
+  <button class="TLD"><a href="https://www.youtube.com/channel/UCvjYs1Y1Bn0HBeUemCfHu2w/view_as=subscriber?sub_confirmation=1">Subscribe My Chanell</a></button>
+
+  <style>
+    .ln {
+        background-color: lightsalmon;
+        border-radius: 8px;
+        padding: 5px;
+        margin-top: 20px;
+        width: 210px;
+        margin-left: 10px;
+        padding-left: 10px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 2px solid rgb(15, 192, 59);
+    }
+    body {
+        border: 2px solid greenyellow;
+        margin-left: 5px;
+        border-radius: 10px;
+    }
+    * {
+        margin-left: 5px;
+    }
+  </style>
+
+
+<div class="ln">
+   <p style="color: blue;"title = "Tech">T  -  Teach </p>
+   <p style="color: blue;"title = "Leaning">L  -  Learning </p>
+   <p style="color: blue;"title = "Demonstrate">D  -  Demonstrate   </p>
+   <p style="color: blue;"title = "Study">S  -  Study  </p>
+</div>
+
+<p id="rv">My Now Relesed Videos</p>
+
+
+
+<table>
+<tr>
+
+    <th>Videos</th>
+    <th>serious or video</th>
+    <th> has subtitle</th>
+    <th>Director</th>
+</tr>
+<tr>
+    <td>abirahasak episode 1</td>
+    <td>serious</td>
+    <td>no</td>
+    <td>Lakindu Kumuditha</td>
+</tr>
+<tr>
+    <td>abirahasak episode 2 (Hora Police)</td>
+    <td>serious</td>
+    <td>no</td>
+    <td>Tharusha Sankalpa</td>
+</tr>
+<tr>
+    <td>Malu Na</td>
+    <td>video</td>
+    <td>no</td>
+    <td>Lakindu Kumuditha</td>
+</tr>
+<tr>
+    <td>Rassawa iwarai</td>
+    <td>video</td>
+    <td>no</td>
+    <td>Tharusha Sankalpa</td>
+</tr>
+<tr>
+    <td>ravatichacha polkichcha</td>
+    <td>video</td>
+    <td>no</td>
+    <td>Lakindu Kumuditha</td>
+</tr>
+<tr>
+    <td>Adobe ilustetor touterial</td>
+    <td>touterial video</td>
+    <td>no</td>
+    <td>Lakindu Kumuditha</td>
+</tr>
+<tr>
+    <td>Animiz Aimation epi - 1</td>
+    <td>touterial video</td>
+    <td>no</td>
+    <td>Lakindu Kumuditha</td>
+</tr>
+<tr>
+<td>Animiz Aimation epi - 2</td>
+<td>touterial video</td>
+<td>no</td>
+<td>Lakindu Kumuditha</td>
+</tr>
+<tr>
+<td>FPS Creator Toutertial</td>
+<td>touterial video</td>
+<td>no</td>
+<td>Lakindu Kumuditha</td>
+<tr>
+<td>Power Point 01 Touterial Sinhala in TLDS Production</td>
+<td>touterial video</td>
+<td>no</td>
+<td>Lakindu Kumuditha</td>
+</tr>
+<tr>
+<td>How to make a cartoon in adobe animate 01 in TLDS Production </td>
+<td>touterial video</td>
+<td>no</td>
+<td>Lakindu Kumuditha</td>
+
+<tr>
+<tr>
+    <td>HTML Tutorial 01 | Introduction to HTML | TLDS Production</td>
+    <td>Tutorial Video</td>
+    <td>no</td>
+    <td>Lakindu Kumuditha</td>
+</tr>
+</tr>
+<tr>
+    <td>HTML Tutorial 02 | TLDS Production (Latest Relesed Video)</td>
+    <td>Tutorial Video</td>
+    <td>no</td>
+    <td>Lakindu Kumuditha</td>
+</tr>
+
+
+
+</table>
+
+
+
+
+<br>
+<a href="fullvideos.html">
+<button id="fullvi">Watch The This Videos On This Website</button>
+</a>
+
+<style>
+#fmi {
+    border: solid 1px gold;
+    padding: 5px;
+    width: 20%;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+</style>
+
+<h2 id="fmi">For More Itroductions.</h2>
+
+<div class="laki">
+
+<H3 style="color: cadetblue;">Lakindu Kumuditha</H3>
+<p style="color: blueviolet;" title="Lakindu Kumuditha 1st" >Lakindu Kumuditha is in rathnapura district.it is beautiful disrict.his father name is sarath Munasinghe and Mother name is Aindika Kathriarachchi.his father and mother job is teaching.he has one brother his name is deliya suganjith.</p>
+<h3 style="color: white;" id="per">My Computer Profomence</h3>
+<p class="cp">Prosessor - i5 2nd jen</p>
+<p class="cp">Hard - 500 GB</p>
+<p class="cp">Ram - 8 GB</p>
+<p class="cp">Monitor - Dell Monitor</p>
+<p class="cp">Os - Windows 10</p>
+
+<h3 style="color: white;" id="pern">My Computer Softweres</h3>
+<p class="cs">Video aditing - Adobe Primere Pro</p>
+<p class="cs">Effects aditing - Adobe After Effects</p>
+<p class="cs">Character aditing - Character Creator</p>
+<p class="cs">2D Cartoon Making - Cartoon Animator 5</p>
+<p class="cs">Thambnail aditing - Adobe Photoshop</p>
+<p class="cs">Game aditing - Unity</p>
+<p class="cs">Web Site Disign - VS Code</p>
+
+</div>
+
+<h3 style="color: cadetblue;">Deliya Suganjith</h3>
+<p style="color: blueviolet;" title="Deliya Suganjith 2nd">Deliya Suganjith is in rathnapura district.it is beautiful disrict.his father name is sarath Munasinghe and Mother name is Aindika Kathriarachchi.his father and mother job is teaching.he has one brother his name is Lakindu Kumuditha.</p>
+
+<h3 style="color: cadetblue;">Denuwan Himasha</h3>
+<p style="color: blueviolet;" title="Denuwan Himasha 3rd">Denuwan Himasha is in rathnapura district.it is beautiful disrict.his father name is Nimal and Mother name is Nanda Padmini.his father and mother job is Gurdening.he has one sister.</p>
+
+<h3 style="color: cadetblue;">Shamika Sewmal</h3>
+<p style="color: blueviolet;" title="Shamika Sewmal 4th">Shamika Sewmal is in rathnapura district.it is beautiful disrict.his father name is _______________ and Mother name is ________________.his father and mother job is _______________.He has one sister </p>
+
+<style>
+    hr {
+        color: chocolate;
+        
+    }
+   
+</style>
+
+<h3 id="pas">Password is - freeforlk</h3>
+
+<a href="The Game.html">
+<button id="downloadthe-game">Download the Let's See The Brain Game <i class="bi bi-cloud-arrow-down-fill"></i></button>
+</a>
+<a href="Brain Test/Let's See The Brain.html">
+<button id="playbro">If You Have A Android Phone You can Play It On Browser</button>
+</a>
+<br>
+<hr>
+
+<style>
+    * {
+        margin-right: auto;
+    }
+    #pas {
+        color: wheat;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-left: 5px;
+    }
+    .all {
+        color: brown;
+        text-align: center;
+        cursor: default;
+    }
+</style>
+
+<!-- <div class="alert alert-primary">
+    <div class="icon__wrapper">
+      <span class="mdi mdi-alert-outline"></span>
+    </div>
+    <p>You’ve assigned Owner of <a href="#">Button Component.</a></p>
+    <span class="mdi mdi-open-in-new open"></span>
+    <span class="mdi mdi-close close"></span>
+  </div>
+  <div class="alert alert-success">
+    <div class="icon__wrapper">
+      <span class="mdi mdi-alert-outline"></span>
+    </div>
+    <p>You’ve assigned Owner of <a href="#">Button Component.</a></p>
+    <span class="mdi mdi-open-in-new open"></span>
+    <span class="mdi mdi-close close"></span>
+  </div>
+  <div class="alert alert-warning">
+    <div class="icon__wrapper">
+      <span class="mdi mdi-alert-outline"></span>
+    </div>
+    <p>You’ve assigned Owner of <a href="#">Button Component.</a></p>
+    <span class="mdi mdi-open-in-new open"></span>
+    <span class="mdi mdi-close close"></span>
+  </div>
+  <div class="alert alert-dark">
+    <div class="icon__wrapper">
+      <span class="mdi mdi-alert-outline"></span>
+    </div>
+    <p>You’ve assigned Owner of <a href="#">Button Component.</a></p>
+    <span class="mdi mdi-open-in-new open"></span>
+    <span class="mdi mdi-close close"></span>
+  </div>-->
+
+
+
+
+
+<h1 style="color: brown;text-align: center;" id="tldsp">TLDS Production</h1>
+<h6 class="all" title="TLDS Production">Cophyright By TLDS Production 2022 All Rhigt Reseved</h6>
+
+
+</body>
+</html>
